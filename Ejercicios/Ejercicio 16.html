@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numero1 = prompt("Introduzca un numero: ", );
+        var numero2 = prompt("Introduzca otro numero: ", );
+        var NumeroMenor;
+        if (parseInt(numero1) < parseInt(numero2)) {
+          NumeroMenor = numero1;
+        } else {
+          NumeroMenor = numero2;
+        }
+
+        for (let i=2; i < parseInt(NumeroMenor) / 2; i++) {
+          if (parseInt(numero1) % i == 0 && parseInt(numero2) % i == 0) {
+             alert("Los divisores comunes son: "+ i +" ");
+          }          
+        }
+        
+    </script>
+</body>
+</html>

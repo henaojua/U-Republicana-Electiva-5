@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let vocales = ["a", "e", "i", "o", "u"]
+        let contadorA = 0;
+        let contadorE = 0;
+        let contadorI= 0;
+        let contadorO= 0;
+        let contadorU = 0;
+
+        var letras  = prompt ("Introduzca una frase", )
+            SeparaLetras = letras.split('')
+
+        for ( let i = 0; i < SeparaLetras.length; i++){
+            for (let j = 0; j < vocales.length; j++){
+
+                if (SeparaLetras[i] == vocales[j]){
+                    
+                    if (vocales[j] == "a"){
+
+                        contadorA++;
+                    }else if (vocales[j] == "e"){
+
+                        contadorE++;
+                    }else if (vocales[j] == "i"){
+
+                        contadorI++;
+                    }else if(vocales[j] == "o"){
+
+                        contadorO++;
+                    }else if(vocales[j] == "u"){
+
+                        contadorU++;
+                    }
+                    
+            }
+
+        }
+
+    }
+
+    alert("La vocal A aparece: " + contadorA+ " veces")
+    alert("La vocal E aparece: " + contadorE + " veces")
+    alert("La vocal I aparece: " + contadorI + " veces")
+    alert("La vocal O aparece: " + contadorO + " veces")
+    alert("La vocal U aparece: " + contadorU + " veces")
+    </script>
+    
+</body>
+</html>
